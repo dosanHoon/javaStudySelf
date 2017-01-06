@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>PJ02</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+	   <servlet-name>HelloServlet</servlet-name>
+	   <servlet-class>com.funple.ch5.HelloServlet</servlet-class>
+	</servlet>
+	<servlet>
+	   <servlet-name>ViewServlet</servlet-name>
+	   <servlet-class>com.funple.ch5.ViewServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>ViewServlet</servlet-name>
+	   <url-pattern>/ViewServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>HelloServlet</servlet-name>
+	   <url-pattern>/HelloServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
