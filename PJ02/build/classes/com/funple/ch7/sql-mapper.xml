@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.funple.ch7">
+  <select id="selectCountMytable" resultType="int">
+    select count(*) from mytable
+  </select>
+  <select id="SelectListMytable" resultType="myTableBean" parameterType="myTableBean">
+    select tid,tname from mytable
+    where tname like concat('%', #{tname},'%')
+    and tid = #{tid}
+  </select>
+</mapper>

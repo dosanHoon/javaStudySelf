@@ -12,6 +12,10 @@
 	   <servlet-name>ViewServlet</servlet-name>
 	   <servlet-class>com.funple.ch5.ViewServlet</servlet-class>
 	</servlet>
+	<servlet>
+	   <servlet-name>MybatisServlet</servlet-name>
+	   <servlet-class>com.funple.ch7.MybatisServlet</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 	   <servlet-name>ViewServlet</servlet-name>
@@ -20,5 +24,9 @@
 	<servlet-mapping>
 	   <servlet-name>HelloServlet</servlet-name>
 	   <url-pattern>/HelloServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	   <servlet-name>MybatisServlet</servlet-name>
+	   <url-pattern>/MybatisServlet</url-pattern>
 	</servlet-mapping>
 </web-app>
